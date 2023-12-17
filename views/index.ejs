@@ -13,5 +13,10 @@
             color: steelblue;
         }
     </style>
+    <ul>
+        <% drinks.forEach(function(drink) { %>
+            <li><%= drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %></li>
+          <% }); %>
+    </ul>
 </body>
 </html>
