@@ -13,6 +13,10 @@ app.get('/drinks', (req, res) => {
     res.render('index.ejs', {drinks})
 })
 
+app.get('/drinks/:id', (req, res) => {
+    const drinks = req.params.id
+    res.send (req.params.id)
+})
 
 
 
