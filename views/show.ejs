@@ -6,8 +6,16 @@
     <title></title>
 </head>
 <body>
-    <h1>Drinks Show Page</h1>
+    <h1>At foo bar</h1>
 
-    <h2><%= drink.name %></h2>
+    <h2><%= drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %></h2>
+
+
+    <img src="<%= drink.image%>".png alt="<%= drink.name %> Image">
+
+    <h3><%= drink.price %></h3>
+
+    <a href='/drinks'>Back to index</a>
+
 </body>
 </html>
