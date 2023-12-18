@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to the best gitPub ever</h1>
+    <h1>Welcome to the best gitPub ever
+    </h1>
     <style>
         body{
             background-color: blanchedalmond;
@@ -14,9 +15,13 @@
         }
     </style>
     <ul>
-        <% drinks.forEach(function(drink) { %>
-            <li><%= drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %></li>
-          <% }); %>
+        <% for (let i = 0; i < drinks.length; i++){ %>
+        <li>
+            <a href="/drinks/<%= i %>">
+            <%= drinks[i].name.charAt(0).toUpperCase() + drinks[i].name.slice(1) %>
+            </a>
+        </li>
+        <% } %>
     </ul>
 </body>
 </html>
